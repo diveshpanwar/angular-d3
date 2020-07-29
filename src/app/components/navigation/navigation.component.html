@@ -4,8 +4,15 @@
         <span style="font-size: 1rem;"> {{title}}</span>
     </button>
     <div class="fill-space"></div>
-    <button mat-button (click)="openLink('area-chart')">
+    <button mat-mini-fab color="primary" (click)="openLink('area-chart')">
         <mat-icon>bar_chart</mat-icon>
-        Area Chart
+    </button>
+    &nbsp;
+    <button mat-mini-fab color="primary" (click)="openLink('heat-map')">
+        <mat-icon>border_all</mat-icon>
+    </button>
+    &nbsp;
+    <button mat-mini-fab color="primary" (click)="openLink('bubble-chart')">
+        <mat-icon>bubble_chart</mat-icon>
     </button>
 </mat-toolbar>

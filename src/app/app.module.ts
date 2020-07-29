@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AreaChartComponent } from './components/area-chart/area-chart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HeatMapComponent } from './components/heat-map/heat-map.component';
+import { BubbleChartComponent } from './components/bubble-chart/bubble-chart.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HeatMapComponent } from './components/heat-map/heat-map.component';
     NavigationComponent,
     HomeComponent,
     AreaChartComponent,
-    HeatMapComponent
+    HeatMapComponent,
+    BubbleChartComponent
   ],
   imports: [
     BrowserModule,
