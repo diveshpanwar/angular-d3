@@ -1,5 +1,12 @@
 <div class="row">
-    <div class="col">
+    <div class="col-9">
         <div id="pie-chart" class="text-center"></div>
+    </div>
+    <div class="col-3 mt-3" *ngIf="info">
+        <ul class="list-group">
+            <li class="list-group-item active">SELECTED PIE</li>
+            <li class="list-group-item">LABLE: {{info.data.key}}</li>
+            <li class="list-group-item">VALUE: {{info.data.value}}</li>
+          </ul>
     </div>
 </div>

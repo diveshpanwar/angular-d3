@@ -58,7 +58,8 @@ export class BubbleChartComponent implements OnInit, AfterViewInit {
           .style('background-color', 'black')
           .style('border-radius', '5px')
           .style('padding', '10px')
-          .style('color', 'white');
+          .style('color', 'white')
+          .style('position', 'absolute');
 
         // -2- Create 3 functions to show / update (when mouse move but stay on same circle) / hide the tooltip
         const showTooltip = function (d) {

@@ -12,7 +12,7 @@ export class PieChartComponent implements OnInit, AfterViewInit {
   width = 450;
   height = 450;
   margin = 40;
-
+  info = null;
   // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
   radius = Math.min(this.width, this.height) / 2 - this.margin;
 
@@ -45,6 +45,14 @@ export class PieChartComponent implements OnInit, AfterViewInit {
       .innerRadius(0)
       .outerRadius(this.radius);
 
+    const mouseover = (d) => {
+      console.log(d);
+      this.info = d;
+    };
+    const mouseleave = (d) => {
+      console.log(d);
+      this.info = null;
+    };
     // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
     this.svg
       .selectAll('mySlices')
@@ -55,7 +63,9 @@ export class PieChartComponent implements OnInit, AfterViewInit {
       .attr('fill', function (d) { return (color(d.data.key)); })
       .attr('stroke', 'black')
       .style('stroke-width', '2px')
-      .style('opacity', 0.7);
+      .style('opacity', 0.7)
+      .on('mouseover', mouseover)
+      .on('mouseleave', mouseleave);
 
     // Now add the annotation. Use the centroid method to get the best coordinates
     this.svg
@@ -63,7 +73,7 @@ export class PieChartComponent implements OnInit, AfterViewInit {
       .data(dataReady)
       .enter()
       .append('text')
-      .text(function (d) { return 'grp ' + d.data.key })
+      .html(function (d) { return 'grp ' + d.data.key + ':' + d.data.value })
       .attr('transform', function (d) { return 'translate(' + arcGenerator.centroid(d) + ')'; })
       .style('text-anchor', 'middle')
       .style('font-size', 17);
