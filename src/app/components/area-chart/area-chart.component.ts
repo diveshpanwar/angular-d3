@@ -26,7 +26,7 @@ export class AreaChartComponent implements OnInit, AfterContentInit {
   }
 
   constructor() {
-    d3.csv('assets/files/data.csv', (data: any) => {
+    d3.csv('assets/files/density.csv', (data: any) => {
       this.datum.push(data);
       return null;
     }).then(res => {

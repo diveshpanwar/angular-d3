@@ -9,13 +9,15 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { HomeComponent } from './components/home/home.component';
 import { AreaChartComponent } from './components/area-chart/area-chart.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HeatMapComponent } from './components/heat-map/heat-map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     HomeComponent,
-    AreaChartComponent
+    AreaChartComponent,
+    HeatMapComponent
   ],
   imports: [
     BrowserModule,
