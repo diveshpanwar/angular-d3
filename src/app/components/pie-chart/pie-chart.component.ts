@@ -32,7 +32,7 @@ export class PieChartComponent implements OnInit, AfterViewInit {
     // set the color scale
     const color = d3.scaleOrdinal()
       .domain(datas)
-      .range(['#98abc5', '#8a89a6', '#7b6888', '#6b486b', '#a05d56']);
+      .range(['#e83e8c', '#fd7e14', '#ffc107', '#007bff', '#28a745']);
 
     // Compute the position of each group on the pie:
     const pie = d3.pie()
