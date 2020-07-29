@@ -11,6 +11,7 @@ import { AreaChartComponent } from './components/area-chart/area-chart.component
 import { HttpClientModule } from '@angular/common/http';
 import { HeatMapComponent } from './components/heat-map/heat-map.component';
 import { BubbleChartComponent } from './components/bubble-chart/bubble-chart.component';
+import { BarChartComponent } from './components/bar-chart/bar-chart.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BubbleChartComponent } from './components/bubble-chart/bubble-chart.com
     HomeComponent,
     AreaChartComponent,
     HeatMapComponent,
-    BubbleChartComponent
+    BubbleChartComponent,
+    BarChartComponent
   ],
   imports: [
     BrowserModule,
