@@ -1,11 +1,11 @@
 <mat-toolbar color="primary">
-    <button mat-icon-button>
+    <button mat-icon-button (click)="openLink('')">
         <mat-icon>add_chart</mat-icon>
+        <span style="font-size: 1rem;"> {{title}}</span>
     </button>
-    <span style="font-size: 1rem;">{{title}}</span>
     <div class="fill-space"></div>
-    <button mat-button>
-        <mat-icon>home</mat-icon>
-        HOME
+    <button mat-button (click)="openLink('area-chart')">
+        <mat-icon>bar_chart</mat-icon>
+        Area Chart
     </button>
 </mat-toolbar>

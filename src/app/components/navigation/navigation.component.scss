@@ -1,3 +1,8 @@
 .fill-space {
     flex: 1 1 auto;
 }
+
+*:focus {
+    outline: none!important;
+    border: 0;
+ }
