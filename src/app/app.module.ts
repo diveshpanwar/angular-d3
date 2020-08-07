@@ -13,7 +13,7 @@ import { HeatMapComponent } from './components/heat-map/heat-map.component';
 import { BubbleChartComponent } from './components/bubble-chart/bubble-chart.component';
 import { BarChartComponent } from './components/bar-chart/bar-chart.component';
 import { PieChartComponent } from './components/pie-chart/pie-chart.component';
-
+import { AngularD3GraphLibModule } from 'angular-d3-graphs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +30,8 @@ import { PieChartComponent } from './components/pie-chart/pie-chart.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularD3GraphLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
