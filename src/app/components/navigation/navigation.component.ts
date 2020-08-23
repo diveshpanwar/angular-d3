@@ -14,6 +14,7 @@ export class NavigationComponent implements OnInit {
   }
 
   openLink(link: string): void {
+    console.log(link);
     this.router.navigate([`/${link}`]);
   }
 

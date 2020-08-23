@@ -14,6 +14,7 @@ import { BubbleChartComponent } from './components/bubble-chart/bubble-chart.com
 import { BarChartComponent } from './components/bar-chart/bar-chart.component';
 import { PieChartComponent } from './components/pie-chart/pie-chart.component';
 import { AngularD3GraphLibModule } from 'angular-d3-graphs';
+import { BoxPlotComponent } from './components/box-plot/box-plot.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { AngularD3GraphLibModule } from 'angular-d3-graphs';
     HeatMapComponent,
     BubbleChartComponent,
     BarChartComponent,
-    PieChartComponent
+    PieChartComponent,
+    BoxPlotComponent
   ],
   imports: [
     BrowserModule,
